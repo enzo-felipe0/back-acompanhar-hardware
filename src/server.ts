@@ -8,11 +8,10 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3333;
 
-// Middlewares
 app.use(cors());
-app.use(express.json());
+app.use(express.json()); 
 
-// Rotas
+// Rotas 
 app.use('/api', pecaRoutes);
 
 // Rota de teste
