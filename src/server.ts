@@ -12,7 +12,10 @@ const HOST = '0.0.0.0';
 
 // Middlewares
 app.use(cors({
-  origin: '*', // Permite qualquer origem
+  origin: [
+    'http://localhost:5173', // desenvolvimento
+    'https://front-acompanhar-hardware.vercel.app/' // produção
+  ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
