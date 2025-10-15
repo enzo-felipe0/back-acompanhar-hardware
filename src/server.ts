@@ -14,8 +14,9 @@ const HOST = '0.0.0.0';
 app.use(cors({
   origin: [
     'http://localhost:3000', // desenvolvimento
-    'https://front-acompanhar-hardware.vercel.app/', // produção
-    'https://vercel.com/enzo-felipe0s-projects/front-acompanhar-hardware/5rPSbCwJsTPck7nypGKR4wSqQg2U'
+    'https://front-acompanhar-hardware.vercel.app', // produção
+    'https://vercel.com/enzo-felipe0s-projects/front-acompanhar-hardware/5rPSbCwJsTPck7nypGKR4wSqQg2U',
+    'https://front-acompanhar-hardware-git-main-enzo-felipe0s-projects.vercel.app'
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
