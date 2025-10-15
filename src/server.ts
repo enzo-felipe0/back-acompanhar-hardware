@@ -7,14 +7,15 @@ import authRoutes from './routes/authRoutes';
 dotenv.config();
 
 const app = express();
-const PORT = Number(process.env.PORT) || 3333; // ⚠️ Força conversão para número
+const PORT = Number(process.env.PORT) || 3333; 
 const HOST = '0.0.0.0';
 
 // Middlewares
 app.use(cors({
   origin: [
-    'http://localhost:5173', // desenvolvimento
-    'https://front-acompanhar-hardware.vercel.app/' // produção
+    'http://localhost:3000', // desenvolvimento
+    'https://front-acompanhar-hardware.vercel.app/', // produção
+    'https://vercel.com/enzo-felipe0s-projects/front-acompanhar-hardware/5rPSbCwJsTPck7nypGKR4wSqQg2U'
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
